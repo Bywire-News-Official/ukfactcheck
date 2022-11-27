@@ -8,3 +8,7 @@ body {
 .navbar {
     position: relative;
 }
+
+.button {
+    background-color: #2e2e2e;
+}
