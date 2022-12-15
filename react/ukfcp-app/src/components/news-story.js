@@ -3,6 +3,8 @@ import './news-story.css'
 
 const NewsItem = ({title, author, url, publishedAt}) => {
     return (
+        <div class="row">
+            <div class="col">
         <div className="news-app">
             <div className="news-item">
 
@@ -13,6 +15,9 @@ const NewsItem = ({title, author, url, publishedAt}) => {
                 <small>{publishedAt}</small>
             </div>
         </div>
+        </div>
+        </div>
+       
     )
 }
 

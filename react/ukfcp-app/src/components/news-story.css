@@ -1,0 +1,33 @@
+
+
+.news-app {
+    display: flex;
+    justify-content: center;
+}
+
+.news-item {
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 1rem;
+}
+
+a:link {
+    color: blue;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: blue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: purple;
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: purple;
+    text-decoration: underline;
+  }
