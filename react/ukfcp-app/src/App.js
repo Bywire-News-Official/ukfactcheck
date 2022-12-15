@@ -3,6 +3,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NewsList from './components/news-list';
+import bootstrap from 'bootstrap'
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">UK Fact Check Michael</a>
+    <a class="navbar-brand" href="#">UK Fact Check</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
