@@ -1,7 +1,7 @@
 import React from 'react';
 import './news-story.css'
 
-const NewsItem = ({title, author, url, publishedAt}) => {
+const NewsItem = ({title, description, url, publishedAt, content}) => {
     return (
         <div class="row">
             <div class="col">
@@ -11,7 +11,8 @@ const NewsItem = ({title, author, url, publishedAt}) => {
                 <h2 className="news-title">
                 <a href={url} target="_blank" rel="noreferrer">
                 {title}</a></h2>
-                <p>{author}</p>
+                <p>{description}</p>
+                <p>{content}</p>
                 <small>{publishedAt}</small>
             </div>
         </div>

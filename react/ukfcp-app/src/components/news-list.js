@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NewsItem from './news-story'
 
+
 const NewsList = () => {
     const [articles, setArticles] = useState([])
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get('https://newsapi.org/v2/everything?domains=techcrunch.com&apiKey=92b627a1012f4b6e9d8fa2025aee3f7d')
+            const response = await axios.get('https://gnews.io/api/v4/search?q=example&token=efdf21ac7b377951ab78e550bf5dea80&lang=en&country=us&max=10')
             console.log(response)
             setArticles(response.data.articles)
         }
@@ -20,9 +21,9 @@ const NewsList = () => {
                 return (
                     <NewsItem 
                         title={article.title}
-                        author={article.author}
+                        description={article.description}
                         publishedAt={article.publishedAt}
-                        source={article.source.name}
+                        content={article.content}
                         url={article.url}
                     />
                 )
