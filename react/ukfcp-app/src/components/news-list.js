@@ -22,7 +22,7 @@ const NewsList = () => {
                         title={article.title}
                         author={article.author}
                         publishedAt={article.publishedAt}
-                        source={article.source}
+                        source={article.source.name}
                         url={article.url}
                     />
                 )
